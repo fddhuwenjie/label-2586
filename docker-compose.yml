@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+# Docker Compose 配置文件
+# 文字冒险游戏 - 带 noVNC 支持
+
+services:
+  # 游戏服务
+  game:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: text-adventure-game
+    # 环境变量配置
+    environment:
+      - PYTHONIOENCODING=utf-8
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+      - DISPLAY=:99
+    # noVNC 端口映射
+    ports:
+      - "6080:6080"
+    # 重启策略
+    restart: unless-stopped
+    # 网络配置
+    networks:
+      - game-network
+
+networks:
+  game-network:
+    driver: bridge

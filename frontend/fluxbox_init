@@ -1,0 +1,4 @@
+session.screen0.toolbar.visible: false
+session.screen0.tabs.usePixmap: false
+session.screen0.window.focus.model: ClickFocus
+session.styleFile: /usr/share/fluxbox/styles/bloe

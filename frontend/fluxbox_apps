@@ -1,0 +1,12 @@
+[app] (name=pygame)
+  [Deco] {NONE}
+  [Maximized] {yes}
+[end]
+[app] (class=pygame)
+  [Deco] {NONE}
+  [Maximized] {yes}
+[end]
+[app] (title=.*Text Adventure.*)
+  [Deco] {NONE}
+  [Maximized] {yes}
+[end]

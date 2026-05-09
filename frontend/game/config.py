@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+游戏配置文件
+包含窗口设置、颜色定义、字体配置等
+"""
+
+# 窗口设置
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+WINDOW_TITLE = "文字冒险游戏 - Text Adventure"
+FPS = 60
+
+# 颜色定义 (黑白风格)
+COLOR_BLACK = (0, 0, 0)
+COLOR_WHITE = (255, 255, 255)
+COLOR_GRAY = (128, 128, 128)
+COLOR_LIGHT_GRAY = (200, 200, 200)
+COLOR_DARK_GRAY = (50, 50, 50)
+
+# 字体设置
+FONT_SIZE_TITLE = 48
+FONT_SIZE_LARGE = 32
+FONT_SIZE_NORMAL = 24
+FONT_SIZE_SMALL = 18
+
+# 文本框设置
+TEXT_BOX_PADDING = 20
+TEXT_BOX_MARGIN = 30
+OPTION_BOX_HEIGHT = 50
+OPTION_BOX_MARGIN = 10
+
+# 输入框设置
+INPUT_BOX_WIDTH = 400
+INPUT_BOX_HEIGHT = 50
+
+# 游戏状态
+STATE_NAME_INPUT = "name_input"
+STATE_PLAYING = "playing"
+STATE_GAME_OVER = "game_over"
+STATE_VICTORY = "victory"
